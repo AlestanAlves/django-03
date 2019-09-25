@@ -53,7 +53,7 @@ urlpatterns = [
 ```
     -criação de rotas chamando suas views
 ```
-- **Viee**
+- **View**
 ```
     - função com request utilizado
     - request.method == "POST"
