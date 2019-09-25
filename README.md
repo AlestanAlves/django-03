@@ -11,6 +11,50 @@
 - **form action:** `action="/" para ir para algum lugar`
 - **Criar na view o objeto de cadastro:** `
 
+python manage.py makemigrations -> criar arquivo de migração
+python manage.py migrate -> Aplicar migração na base de dados
+
+obs: Tente não excluir o histórico de migrações. :) :) 
+
+winpty python manage.py createsuperuser -> criar um super usuário
+no windows -> winpty python manage.py createsuperuser
+ 
+from {website}.models import *-> importar todas as models de um app
+admin.site.register(Coach) -> registrar no admin.py
+
+colocar na model Coach
+    def __str__(self):
+        return self.nome                                                                                                         
+
+Minhas urls:
+
+from django.contrib import admin
+from django.urls import path
+from website import views
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', views.index)
+]
+
+Passo a passo:
+criar models
+    - makemigrations
+    - migrate
+
+url
+    -criação de rotas chamando suas views
+
+view    
+    - função com request utilizado
+    - request.method == "POST"
+
+templates
+    - páginas html (formulários)
+    - crsf token - carimbo
+    - action: a url que chama a view
+
+
 
 ## CSRF TOKEN
 
