@@ -11,50 +11,60 @@
 - **form action:** `action="/" para ir para algum lugar`
 - **Criar na view o objeto de cadastro:** `
 
-python manage.py makemigrations -> criar arquivo de migração
-python manage.py migrate -> Aplicar migração na base de dados
+ - **Criar arquivo de migração** `python manage.py makemigrations`
+- **Aplicar migração na base de dados** `python manage.py migrate`
 
-obs: Tente não excluir o histórico de migrações. :) :) 
+_obs: Tente não excluir o histórico de migrações. :) :)_
 
-winpty python manage.py createsuperuser -> criar um super usuário
-no windows -> winpty python manage.py createsuperuser
+- **Criar um super usuário:** `python3  manage.py createsuperuser`
+- **No windows:** `winpty python manage.py createsuperuser`
  
-from {website}.models import *-> importar todas as models de um app
-admin.site.register(Coach) -> registrar no admin.py
+- **Importar todas as models de um app:** `from {website}.models import * `
+- **Registrar no admin.py:** `admin.site.register(Coach)`
 
-colocar na model Coach
+**Colocar na model Coach**
+```
     def __str__(self):
-        return self.nome                                                                                                         
+        return self.nome 
+```
 
-Minhas urls:
-
+### Minhas urls:
+```
 from django.contrib import admin
 from django.urls import path
 from website import views
-
+```
+```
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index)
 ]
+```
 
-Passo a passo:
-criar models
+## Passo a passo:
+
+- **Criar models**
+``` 
     - makemigrations
     - migrate
+```
 
-url
+- **URL**
+```
     -criação de rotas chamando suas views
-
-view    
+```
+- **Viee**
+```
     - função com request utilizado
     - request.method == "POST"
+```
 
-templates
+- **Templates**
+``` 
     - páginas html (formulários)
     - crsf token - carimbo
     - action: a url que chama a view
-
-
+```
 
 ## CSRF TOKEN
 
