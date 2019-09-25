@@ -7,3 +7,11 @@
 - **Criar super usuario:** `python manage.py createsuperuser`
 - **form:get:** `gera uma informação via URL`
 - **form:post:** `gera informação via post`
+- **form action:** `toda vez que criar um formulario no django tem que colocar isso {% csrf_token %}`
+- **form action:** `action="/" para ir para algum lugar`
+- **Criar na view o objeto de cadastro:** `
+
+
+## CSRF TOKEN
+
+<img src="https://www.digitalmunition.me/wp-content/uploads/2018/04/csrf-cross-site-request-forgery-620x350-c.png" />
