@@ -22,7 +22,7 @@ _obs: Tente não excluir o histórico de migrações. :) :)_
 - **Importar todas as models de um app:** `from {website}.models import * `
 - **Registrar no admin.py:** `admin.site.register(Coach)`
 
-**Colocar na model Coach**
+- **Colocar na model Coach**
 ```
     def __str__(self):
         return self.nome 
