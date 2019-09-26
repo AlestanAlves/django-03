@@ -1,8 +1,15 @@
 # Django
 
-<a href = "https://github.com/AlestanAlves/d103">
-<img src="https://user-images.githubusercontent.com/48387196/64310124-570b6a80-cf75-11e9-8ab5-f6b89ccf86c1.png"  width="110" /></a>
+<a href = "https://docs.djangoproject.com/en/2.2/topics/db/models/">
+<img src="https://user-images.githubusercontent.com/48387196/65687547-ee795000-e03f-11e9-90cc-ed6c56d8b185.png"  width="80" /></a>
+
+<a href = "https://github.com/AlestanAlves/django-03/blob/master/LICENSE">
+<img src="https://user-images.githubusercontent.com/48387196/65687713-31d3be80-e040-11e9-80e0-ebf7c4fd4736.png"  width="80" /></a>
  
+<a href = "https://docs.djangoproject.com/en/2.2/">
+<img src="https://user-images.githubusercontent.com/48387196/65687977-a9a1e900-e040-11e9-9f2f-8418272a3063.png"  width="80" /></a>
+
+
 - **Rodar servidor em outra porta:** `python3 manage.py runserver 9000`
 - **Criar um usuario do admin:** `python3 manage.py createsuperuser`
 - **Importar todas as models de um app no admin.py:** `from website.models import *`
