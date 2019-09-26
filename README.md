@@ -1,5 +1,8 @@
 # Django
 
+<a href = "https://github.com/AlestanAlves/d103">
+<img src="https://user-images.githubusercontent.com/48387196/64310124-570b6a80-cf75-11e9-8ab5-f6b89ccf86c1.png"  width="110" /></a>
+ 
 - **Rodar servidor em outra porta:** `python3 manage.py runserver 9000`
 - **Criar um usuario do admin:** `python3 manage.py createsuperuser`
 - **Importar todas as models de um app no admin.py:** `from website.models import *`
